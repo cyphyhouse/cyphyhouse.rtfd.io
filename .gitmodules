@@ -1,0 +1,6 @@
+[submodule "CyPyHous3"]
+	path = CyPyHous3
+	url = https://github.com/cyphyhouse/CyPyHous3
+[submodule "KoordLanguage"]
+	path = KoordLanguage
+	url = https://github.com/cyphyhouse/KoordLanguage
