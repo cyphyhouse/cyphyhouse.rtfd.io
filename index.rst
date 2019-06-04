@@ -10,6 +10,7 @@ Welcome to CyPhyHouse's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   docs/architecture
 
 
 Indices and tables
