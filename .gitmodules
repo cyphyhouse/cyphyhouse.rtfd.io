@@ -4,3 +4,7 @@
 [submodule "KoordLanguage"]
 	path = KoordLanguage
 	url = https://github.com/cyphyhouse/KoordLanguage
+[submodule "Simulator"]
+	path = Simulator
+	url = https://github.com/cyphyhouse/CyPyHous3
+	branch = simulator

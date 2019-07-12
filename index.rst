@@ -12,7 +12,7 @@ Welcome to CyPhyHouse's documentation!
 
    docs/architecture
    KoordLanguage/index
-   CyPyHous3/docs/simulator
+   Simulator/docs/simulator
 
 
 Indices and tables
