@@ -11,7 +11,8 @@ Welcome to CyPhyHouse's documentation!
    :caption: Contents:
 
    docs/architecture
-   KoordLanguage/index.rst
+   KoordLanguage/index
+   CyPyHous3/docs/simulator
 
 
 Indices and tables
