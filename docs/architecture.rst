@@ -1,6 +1,8 @@
+====================
 Project Architecture
 ====================
 
+-------------------
 Software Components
 -------------------
 
@@ -45,6 +47,7 @@ BEST Effort Safe Termination
     Diagrams and interfaces?
 
 
+----------------
 Hardware Devices
 ----------------
 
