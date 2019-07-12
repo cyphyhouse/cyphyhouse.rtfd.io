@@ -21,4 +21,4 @@ python:
 submodules:
   include:
     - KoordLanguage
-
+    - Simulator
