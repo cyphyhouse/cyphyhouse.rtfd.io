@@ -2,11 +2,24 @@
 Project Architecture
 ====================
 
+
 -------------------
 Software Components
 -------------------
 
 .. image:: https://www.lucidchart.com/publicSegments/view/73d07754-deff-43fb-a7bf-40dea2eefcc2/image.png
+
+----------
+Interfaces
+----------
+
+.. toctree::
+   :hidden:
+
+   ros_topics
+
+See :ref:`ros-topics`.
+
 
 Koord Language Compiler
 
