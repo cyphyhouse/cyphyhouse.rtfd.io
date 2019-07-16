@@ -10,14 +10,14 @@ Each line represents ``<topic> <message type>``.
 
 .. code-block:: yaml
 
-    /Waypoint geometry_msgs/PointStamped
+    /Waypoint geometry_msgs/PoseStamped
     /Reached  std_msgs/String
 
 Proposed Changes
 
 .. code-block:: yaml
 
-    waypoint geometry_msgs/PointStamped
+    waypoint geometry_msgs/PoseStamped
     reached  std_msgs/Bool
 
 Topic names are all lower cases by convention.
