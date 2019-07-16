@@ -13,7 +13,6 @@ Each line represents ``<topic> <message type>``.
     /Waypoint geometry_msgs/PointStamped
     /Reached  std_msgs/String
 
-
 Proposed Changes
 
 .. code-block:: yaml
@@ -21,17 +20,21 @@ Proposed Changes
     waypoint geometry_msgs/PointStamped
     reached  std_msgs/Bool
 
+Topic names are all lower cases by convention.
 Note that the topics are not global names anymore.
-Also topic names are all lower cases by convention.
-Therefore, we can change ``ROS_NAMESPACE`` to push-down the topics to,
-e.g., ``/{ROS_NAMESPACE}/waypoint``, to resolve indexing topics with agent id at
-deployment.
+Therefore, we can specify environment variable ``ROS_NAMESPACE`` so that ``ros_launch``
+will push down the topics to, e.g., ``/{ROS_NAMESPACE}/waypoint``,
+to resolve indexing topics with agent id at deployment.
 ``ROS_NAMESPACE`` should be set with an unique ROS name,
 e.g., using device IP and port.
 
 In the simulator, ``*.launch`` is auto-generated.
 We can explicitly generate remapping from, e.g., ``waypoint`` to
-``/{ENDPOINT}/waypoint`` with an unique ``ENDPOINT`` for each simulated agent
+``/{ENDPOINT}/waypoint`` with an unique ``ENDPOINT`` for each simulated agent.
+
+See `Remapping Arguments`_ for more detail.
+
+.. _Remapping Arguments: http://wiki.ros.org/action/fullsearch/Remapping%20Arguments
 
 
 .. todo::
@@ -47,7 +50,7 @@ Drone Specific
 
 .. code-block:: yaml
 
-    /drone{id}/ground_truth/state nav_msgs/Odometry 
+    /drone{id}/ground_truth/state nav_msgs/Odometry
     /drone{id}/cmd_vel            geometry_msgs/Twist
     /drone{id}/goals              std_msgs/Float32MultiArray
 
@@ -65,7 +68,7 @@ Car Specific
     /car{id}/racecar/right_steering_hinge_position_controller/command std_msgs/Float64
 
     # goto.py
-    /car{id}/ground_truth/state nav_msgs/Odometry 
+    /car{id}/ground_truth/state nav_msgs/Odometry
     /car{id}/goals              std_msgs/Float32MultiArray
 
     # ackermann_car.py
