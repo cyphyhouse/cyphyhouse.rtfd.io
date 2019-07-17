@@ -10,18 +10,20 @@ Each line represents ``<topic> <message type>``.
 
 .. code-block:: yaml
 
-    /Waypoint geometry_msgs/PoseStamped
-    /Reached  std_msgs/String
+    Waypoint        geometry_msgs/PoseStamped
+    Waypoint_tobest geometry_msgs/PoseStamped
+    Reached         std_msgs/String
 
 Proposed Changes
 
 .. code-block:: yaml
 
-    waypoint geometry_msgs/PoseStamped
-    reached  std_msgs/Bool
+    waypoint        geometry_msgs/PoseStamped
+    waypoint_tobest geometry_msgs/PoseStamped
+    reached         std_msgs/Bool
 
 Topic names are all lower cases by convention.
-Note that the topics are not global names anymore.
+Note that the topics are not global names.
 Therefore, we can specify environment variable ``ROS_NAMESPACE`` so that ``ros_launch``
 will push down the topics to, e.g., ``/{ROS_NAMESPACE}/waypoint``,
 to resolve indexing topics with agent id at deployment.
@@ -35,11 +37,6 @@ We can explicitly generate remapping from, e.g., ``waypoint`` to
 See `Remapping Arguments`_ for more detail.
 
 .. _Remapping Arguments: http://wiki.ros.org/action/fullsearch/Remapping%20Arguments
-
-
-.. todo::
-
-    ROS topics for BEST protocol
 
 
 Simulation only
