@@ -11,6 +11,7 @@ Welcome to CyPhyHouse's documentation!
    :caption: Contents:
 
    docs/architecture
+   docs/config
    KoordLanguage/index
    Simulator/docs/simulator
 
