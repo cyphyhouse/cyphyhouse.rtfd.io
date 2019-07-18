@@ -1,10 +1,15 @@
 [submodule "CyPyHous3"]
-	path = CyPyHous3
-	url = https://github.com/cyphyhouse/CyPyHous3
+    path = CyPyHous3
+    url = https://github.com/cyphyhouse/CyPyHous3
+    branch = master
+    update = merge
 [submodule "KoordLanguage"]
-	path = KoordLanguage
-	url = https://github.com/cyphyhouse/KoordLanguage
+    path = KoordLanguage
+    url = https://github.com/cyphyhouse/KoordLanguage
+    branch = master
+    update = merge
 [submodule "Simulator"]
-	path = Simulator
-	url = https://github.com/cyphyhouse/CyPyHous3
-	branch = simulator
+    path = Simulator
+    url = https://github.com/cyphyhouse/CyPyHous3
+    branch = simulator
+    update = merge
