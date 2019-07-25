@@ -22,6 +22,6 @@ python:
 
 submodules:
   include:
-    - CyPyHous3
+    - CyPhyHouse-Dev
     - KoordLanguage
     - Simulator
