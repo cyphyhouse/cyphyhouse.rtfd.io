@@ -18,3 +18,8 @@
 	url = https://github.com/cyphyhouse/CyPhyHouse-Dev.git
     branch = master
     update = merge
+[submodule "Cymulator"]
+	path = Cymulator
+	url = https://github.com/cyphyhouse/Cymulator.git
+    branch = master
+    update = merge
