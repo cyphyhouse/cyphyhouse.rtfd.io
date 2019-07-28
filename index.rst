@@ -13,7 +13,7 @@ Welcome to CyPhyHouse's documentation!
    docs/architecture
    CyPhyHouse-Dev/docs/config
    KoordLanguage/index
-   Simulator/docs/simulator
+   Cymulator/docs/simulator
 
 
 Indices and tables

@@ -24,4 +24,4 @@ submodules:
   include:
     - CyPhyHouse-Dev
     - KoordLanguage
-    - Simulator
+    - Cymulator
