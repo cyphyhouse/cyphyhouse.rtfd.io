@@ -8,18 +8,13 @@
     url = https://github.com/cyphyhouse/KoordLanguage
     branch = master
     update = merge
-[submodule "Simulator"]
-    path = Simulator
-    url = https://github.com/cyphyhouse/CyPyHous3
-    branch = simulator
-    update = merge
 [submodule "CyPhyHouse-Dev"]
-	path = CyPhyHouse-Dev
-	url = https://github.com/cyphyhouse/CyPhyHouse-Dev.git
+    path = CyPhyHouse-Dev
+    url = https://github.com/cyphyhouse/CyPhyHouse-Dev.git
     branch = master
     update = merge
 [submodule "Cymulator"]
-	path = Cymulator
-	url = https://github.com/cyphyhouse/Cymulator.git
+    path = Cymulator
+    url = https://github.com/cyphyhouse/Cymulator.git
     branch = master
     update = merge
