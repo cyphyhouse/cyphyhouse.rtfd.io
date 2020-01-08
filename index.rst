@@ -12,8 +12,8 @@ Welcome to CyPhyHouse's documentation!
 
    docs/architecture
    CyPhyHouse-Dev/docs/config
-   KoordLanguage/index
-   Cymulator/docs/simulator
+   KoordLanguage/docs/index
+   Cymulator/docs/index
 
 
 Indices and tables
