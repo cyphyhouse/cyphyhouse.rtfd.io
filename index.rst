@@ -40,7 +40,7 @@ Demo
    :caption: Contents
 
    docs/architecture
-   CyPhyHouse-Dev/docs/config
+   CyPhyHouseExperiments/docs/config
    KoordLanguage/docs/index
    Cymulator/docs/index
 
