@@ -22,6 +22,7 @@ python:
 
 submodules:
   include:
-    - CyPhyHouse-Dev
+    - CyPhyHouseExperiments
+    - CyPyHous3
     - KoordLanguage
     - Cymulator
