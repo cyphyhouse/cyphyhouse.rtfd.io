@@ -6,33 +6,23 @@ Predefined ROS Topics
 Shared between Simulation and Deployment
 ----------------------------------------
 
-Each line represents ``<topic> <message type>``.
-
-.. code-block:: yaml
-
-    Waypoint        geometry_msgs/PoseStamped
-    Waypoint_tobest geometry_msgs/PoseStamped
-    Reached         std_msgs/String
-
-Proposed Changes
-
 .. code-block:: yaml
 
     waypoint        geometry_msgs/PoseStamped
-    waypoint_tobest geometry_msgs/PoseStamped
-    reached         std_msgs/Bool
+    waypoint_tobest geometry_msgs/PoseStamped  # Not used yet
+    reached         std_msgs/String
 
 Topic names are all lower cases by convention.
 Note that the topics are not global names.
-Therefore, we can specify environment variable ``ROS_NAMESPACE`` so that ``ros_launch``
-will push down the topics to, e.g., ``/{ROS_NAMESPACE}/waypoint``,
-to resolve indexing topics with agent id at deployment.
-``ROS_NAMESPACE`` should be set with an unique ROS name,
-e.g., using device IP and port.
+For deployment, we can specify environment variable ``ROS_NAMESPACE`` for each
+device so that ``ros_launch`` will append a prefix to the topics.
+That is the topic at runtime becomes ``/{ROS_NAMESPACE}/waypoint``.
+``ROS_NAMESPACE`` should be set with an unique ROS name such as IP with port.
 
 In the simulator, ``*.launch`` is auto-generated.
-We can explicitly generate remapping from, e.g., ``waypoint`` to
-``/{ENDPOINT}/waypoint`` with an unique ``ENDPOINT`` for each simulated agent.
+We explicitly generate a namespace for each simulated agent.
+E.g., the topic ``waypoint`` becomes ``/{AGENTID}/waypoint`` in simulation
+with the unique ``AGENTID`` as the namespace.
 
 See `Remapping Arguments`_ for more detail.
 
@@ -71,17 +61,9 @@ Car Specific
     # ackermann_car.py
     /car{id}/ackermann_cmd      ackermann_msgs/AckermannDriveStamped
 
+
 Deployment only
 ---------------
-
-Decawave
-~~~~~~~~
-
-.. code-block:: yaml
-
-    /decaPos geometry_msgs/Point
-    /decaVel geometry_msgs/Point
-
 
 Vicon
 ~~~~~
@@ -90,10 +72,6 @@ Vicon
 
     /vrpn_client_node/{vicon_obj}/pose  geometry_msgs/PoseStamped
     /vrpn_client_node/{vicon_obj}/twist geometry_msgs/TwistStamped
-
-.. todo::
-
-    Why does Vicon require ``vicon_obj`` but Decawave does not?
 
 
 Drone Specific
